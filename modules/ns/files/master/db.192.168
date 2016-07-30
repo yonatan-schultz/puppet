@@ -1,0 +1,24 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	300
+@	IN	SOA	ns1.spacecamp.local. admin.ns1.spacecamp.local. (
+			      5		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+
+; name servers - NS records
+	IN	NS	ns1.spacecamp.local.
+	IN	NS	ns2.spacecamp.local.
+
+; PTR records
+1.1	IN	PTR	router.spacecamp.local. ; 192.168.1.1
+118.1	IN	PTR	ns1.spacecamp.local. ; 192.168.1.118
+112.1	IN	PTR	ns2.spacecamp.local. ; 192.168.1.112
+125.1	IN	PTR	ceph-1.spacecamp.local. ; 192.168.1.125
+107.1	IN	PTR	ceph-2.spacecamp.local. ; 192.168.1.107
+103.1	IN	PTR	ceph-3.spacecamp.local. ; 192.168.1.103
+124.1	IN	PTR	puppet.spacecamp.local. ; 192.168.1.124

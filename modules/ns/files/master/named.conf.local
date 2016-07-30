@@ -1,0 +1,11 @@
+zone "spacecamp.local" {
+    type master;
+    file "/etc/bind/zones/db.spacecamp.local"; # zone file path
+    allow-transfer { 192.168.1.112; }; #ns2
+};
+
+zone "168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.192.168";  # 192.168.1.0/24 subnet
+    allow-transfer { 192.168.1.112; };  # ns2
+};
