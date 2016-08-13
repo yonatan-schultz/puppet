@@ -7,6 +7,11 @@
 class ns {
 
 	$packages = ['bind9', 'bind9utils', 'bind9-doc']
-	package { $packages: ensure => 'installed' }
+	package { $packages: ensure => 'installed' }->
 
+	service { 'bind9':
+	  ensure => 'running',
+	  enable  => true,
+          require => Package['bind9']
+	}
 }

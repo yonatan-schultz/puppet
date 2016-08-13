@@ -21,6 +21,7 @@ class ns::master {
 	} ->
 
 	file { '/etc/bind/zones/db.192.168':
+ 		notify	=> Service['bind9'],
                 ensure  => present,
                 source  => 'puppet:///modules/ns/master/db.192.168',
                 owner   => 'root',
@@ -29,6 +30,7 @@ class ns::master {
         } ->
 
         file { '/etc/bind/zones/db.spacecamp.local':
+		notify	=> Service['bind9'],
                 ensure  => present,
                 source  => 'puppet:///modules/ns/master/db.spacecamp.local',
                 owner   => 'root',
