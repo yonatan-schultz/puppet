@@ -1,5 +1,6 @@
 node default {
   include base
+  include ldap_client
 }
 
 node /puppet/ inherits default {}
@@ -17,3 +18,5 @@ node /ns([2-9])+/ inherits default {
 }
 
 node /ceph/ inherits default {}
+
+node /ldap/ inherits default {}
