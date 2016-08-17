@@ -15,12 +15,12 @@ $TTL	300
 				IN	NS	ns2.spacecamp.local.
 
 ; name servers - A records
-ns1.spacecamp.local.		IN	A 	192.168.1.118
+ns1.spacecamp.local.		IN	A 	192.168.1.111
 ns2.spacecamp.local.		IN	A	192.168.1.112
 
 ; 192.168.1.0/16 - A records
 router.spacecamp.local.		IN	A	192.168.1.1
-ceph-1.spacecamp.local.		IN	A	192.168.1.111
+ceph-1.spacecamp.local.		IN	A	192.168.1.104
 ceph-2.spacecamp.local.		IN	A	192.168.1.107
 ceph-3.spacecamp.local.		IN	A	192.168.1.103
 puppet.spacecamp.local.		IN	A	192.168.1.124

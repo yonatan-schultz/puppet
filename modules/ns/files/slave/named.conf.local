@@ -9,12 +9,12 @@
 zone "spacecamp.local" {
     type slave;
     file "slaves/db.spacecamp.local"; # zone file path
-    masters { 192.168.1.118; }; #ns1
+    masters { 192.168.1.111; }; #ns1
 };
 
 zone "168.192.in-addr.arpa" {
     type slave;
     file "slaves/db.192.168";  # 192.168.1.0/24 subnet
-    masters { 192.168.1.118; };  # ns1
+    masters { 192.168.1.111; };  # ns1
 };
 

@@ -16,9 +16,9 @@ $TTL	300
 
 ; PTR records
 1.1	IN	PTR	router.spacecamp.local. ; 192.168.1.1
-118.1	IN	PTR	ns1.spacecamp.local. ; 192.168.1.118
+111.1	IN	PTR	ns1.spacecamp.local. ; 192.168.1.111
 112.1	IN	PTR	ns2.spacecamp.local. ; 192.168.1.112
-111.1	IN	PTR	ceph-1.spacecamp.local. ; 192.168.1.111
+104.1	IN	PTR	ceph-1.spacecamp.local. ; 192.168.1.104
 107.1	IN	PTR	ceph-2.spacecamp.local. ; 192.168.1.107
 103.1	IN	PTR	ceph-3.spacecamp.local. ; 192.168.1.103
 124.1	IN	PTR	puppet.spacecamp.local. ; 192.168.1.124
