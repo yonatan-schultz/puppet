@@ -4,7 +4,14 @@
 #
 class dhcp::authoritative {
 
+	service {'isc-dhcp-server':
+	    ensure  => 'running',
+	    enable  => true,
+	    require => Package['isc-dhcp-server'],
+	}
+
 	file { '/etc/dhcp/dhcpd.conf':
+		notify	=> Service['isc-dhcp-server'],
                 ensure  => present,
                 source  => 'puppet:///modules/dhcp/authoritative/dhcpd.conf',
                 owner   => 'root',
