@@ -1,26 +1,26 @@
 ;
 ; BIND reverse data file for local loopback interface
 ;
-$TTL	300
-@	IN	SOA	ns1.spacecamp.local. admin.ns1.spacecamp.local. (
-			      5		; Serial
-			 604800		; Refresh
-			  86400		; Retry
-			2419200		; Expire
-			 604800 )	; Negative Cache TTL
+$TTL    300
+@       IN      SOA     ns1.spacecamp.local. admin.ns1.spacecamp.local. (
+                              5         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
 ;
 
 ; name servers - NS records
-	IN	NS	ns1.spacecamp.local.
-	IN	NS	ns2.spacecamp.local.
+        IN      NS      ns1.spacecamp.local.
+        IN      NS      ns2.spacecamp.local.
 
 ; PTR records
-1.1	IN	PTR	router.spacecamp.local. ; 192.168.1.1
-111.1	IN	PTR	ns1.spacecamp.local. ; 192.168.1.111
-112.1	IN	PTR	ns2.spacecamp.local. ; 192.168.1.112
-124.1	IN	PTR	puppet.spacecamp.local. ; 192.168.1.124
-108.1	IN	PTR	ldap.spacecamp.local.	; 192.168.1.108
-108.1	IN	PTR	home-assistant.spacecamp.local.	; 192.168.1.108
-102.1	IN	PTR	enlighten-envoy.spacecamp.local. ; 192.168.1.102
-101.1	IN	PTR	chromecast-guestroom.spacecamp.local ; 192.168.1.101
-114.1	IN	PTR	stormageddon.spacecamp.local ; 192.168.1.114
+1.1     IN      PTR     router.spacecamp.local. ; 192.168.1.1
+102.1   IN      PTR     home-assistant.spacecamp.local. ; 192.168.1.102
+105.1   IN      PTR     ns1.spacecamp.local. ; 192.168.1.105
+112.1   IN      PTR     ns2.spacecamp.local. ; 192.168.1.112
+121.1   IN      PTR     ldap.spacecamp.local. ; 192.168.1.121
+124.1   IN      PTR     puppet.spacecamp.local. ; 192.168.1.124
+108.1   IN      PTR     enphase.spacecamp.local. ; 192.168.1.108
+110.1   IN      PTR     openelec.spacecamp.local. ; 192.168.1.110
+116.1   IN      PTR     yschultz.spacecamp.local. ; 192.168.1.116
