@@ -24,3 +24,5 @@ $TTL    300
 108.1   IN      PTR     enphase.spacecamp.local. ; 192.168.1.108
 110.1   IN      PTR     openelec.spacecamp.local. ; 192.168.1.110
 116.1   IN      PTR     yschultz.spacecamp.local. ; 192.168.1.116
+213.1   IN	PTR	guestroomkodi.spacecamp.local. ; 192.168.1.213
+217.1	IN	PTR	livingroomkodi.spacecamp.local. ; 192.168.1.217

@@ -26,3 +26,5 @@ home-assistant.spacecamp.local.		IN     	A      	192.168.1.102
 enphase.spacecamp.local.       		IN     	A      	192.168.1.108
 openelec.spacecamp.local.      		IN     	A      	192.168.1.110
 yschultz.spacecamp.local.      		IN     	A      	192.168.1.116
+guestroomkodi.spacecamp.local.		IN	A	192.168.1.213
+livingroomkodi.spacecamp.local.		IN	A	192.168.1.217
