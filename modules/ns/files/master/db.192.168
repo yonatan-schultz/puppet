@@ -26,3 +26,4 @@ $TTL    300
 116.1   IN      PTR     yschultz.spacecamp.local. ; 192.168.1.116
 213.1   IN	PTR	guestroomkodi.spacecamp.local. ; 192.168.1.213
 217.1	IN	PTR	livingroomkodi.spacecamp.local. ; 192.168.1.217
+219.1	IN	PTR	kubernetes-master.spacecamp.local. ; 192.168.1.219
