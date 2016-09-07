@@ -19,6 +19,7 @@ class ldap_client {
 	} 
 
         file { '/etc/libnss-ldap.conf':
+        	notify  => Service['nscd'],
 		ensure  => present,
                 source  => 'puppet:///modules/ldap_client/libnss-ldap.conf',
                 owner   => 'root',
@@ -28,6 +29,7 @@ class ldap_client {
         }
 
         file { '/etc/nsswitch.conf':
+        	notify  => Service['nscd'],
                 ensure  => present,
                 source  => 'puppet:///modules/ldap_client/nsswitch.conf',
                 owner   => 'root',
