@@ -23,6 +23,7 @@ router.spacecamp.local.			IN      A       192.168.1.1
 puppet.spacecamp.local.			IN      A       192.168.1.124
 ldap.spacecamp.local.                   IN      A       192.168.1.121
 home-assistant.spacecamp.local.		IN      A       192.168.1.102
+pi-hole.spacecamp.local.		IN	A	192.168.1.102
 enphase.spacecamp.local.                IN      A       192.168.1.108
 openelec.spacecamp.local.               IN      A       192.168.1.110
 yschultz.spacecamp.local.               IN      A       192.168.1.116

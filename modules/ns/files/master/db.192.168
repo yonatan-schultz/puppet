@@ -16,7 +16,7 @@ $TTL    300
 
 ; PTR records
 1.1     IN      PTR     router.spacecamp.local. ; 192.168.1.1
-102.1   IN      PTR     home-assistant.spacecamp.local. ; 192.168.1.102
+102.1   IN      PTR     pi-hole.spacecamp.local. ; 192.168.1.102
 105.1   IN      PTR     ns1.spacecamp.local. ; 192.168.1.105
 112.1   IN      PTR     ns2.spacecamp.local. ; 192.168.1.112
 121.1   IN      PTR     ldap.spacecamp.local. ; 192.168.1.121
